@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color1: #2C3E50;
+  --bg-color2: #1ABC9C;
+}
+
+
+.icon {
+  position: relative;
+
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 4px;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 4px;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+
+#portfolio .icon::before,
+#portfolio .icon::after,
+#contact .icon::before,
+#contact .icon::after {
+  background-color: var(--bg-color1) !important;
+}
+
+
+.active-comp {
+  background-color: var(--bg-color2);
+  color: white;
+}
+
+.active-comp:hover {
+  background-color: var(--bg-color2);
+  color: white;
+}
+
+li>a {
+  width: -moz-fit-content;
+  width: fit-content;
+}

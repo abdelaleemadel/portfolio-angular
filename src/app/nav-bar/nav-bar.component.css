@@ -1,0 +1,9 @@
+nav:has(>div > button[aria-expanded="true"]) {
+  min-height: max-content !important;
+}
+
+nav {
+  background-color: var(--bg-color1) !important;
+  transition: all 1s;
+
+}

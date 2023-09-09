@@ -1,0 +1,18 @@
+#portfolio {
+    color: var(--bg-color1);
+}
+
+
+.fa-plus {
+    font-size: 7rem !important;
+}
+
+.port-layer {
+    background-color: var(--bg-color2);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.port-card:hover .port-layer {
+    opacity: 1;
+}
